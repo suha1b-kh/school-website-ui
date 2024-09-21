@@ -1,0 +1,303 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: poppins;
+    color: #fff;
+}
+
+/* Navbar */
+.home {
+    background-color: #192464;
+    height: 100vh;
+}
+
+.header {
+    color: white;
+}
+
+.navbar {
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    background-color: #192464;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0 50px;
+    z-index: 1000;
+}
+
+.header h2 {
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: inline;
+    color: #fff;
+}
+
+.header h2 span {
+    color: #f27122;
+}
+
+.header ul li {
+    display: inline;
+    padding: 5px 15px;
+
+}
+
+.header ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+
+}
+
+.header ul li a:hover {
+    background-color: #f27122;
+    padding: 5px 15px;
+    border-radius: 10px;
+
+}
+
+.button {
+    background-color: #f27122;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+
+}
+
+.button:hover {
+
+    transform: scale(1.1);
+}
+
+/* Home body */
+
+.home .body {
+    padding: 70px 0px 0px 0px;
+}
+
+.body .img-and-p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 50px;
+    height: 457px;
+    font-size: 30px;
+}
+
+.body .img-and-p img {
+    margin: 0px 40px;
+    background-color: #f27122;
+    border-radius: 30px 30px 0px 0px;
+
+}
+
+.body .img-and-p .button-and-p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.body .button {
+    margin: 40px 0px;
+    background-color: #f27122;
+    width: 200px;
+    text-align: center;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+
+}
+
+/* Courses section */
+
+.courses {
+    background-color: white;
+    color: #ff0000;
+    height: auto;
+}
+
+.courses .title {
+    text-align: center;
+    margin: 20px 0 0px 0;
+    font-weight: bold;
+    font-size: 32px;
+    color: #192464;
+}
+
+
+.courses .cards {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    margin: 30px;
+}
+
+.courses .card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 300px;
+    height: 370px;
+    text-align: center;
+    padding: 15px;
+    transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+}
+
+.courses .card img {
+    width: 100%;
+    height: 45%;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+    margin: 0px 0px 50px 0px;
+}
+
+.courses .card h3 {
+    font-size: 18px;
+    color: #192464;
+}
+
+
+.courses .card .price {
+    color: #192464;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.courses .card button {
+    background-color: #f27122;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.courses .card button:hover {
+    background-color: #e05e1b;
+}
+
+.courses .card:hover {
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+}
+
+/***************************** our students section *****************************/
+
+/* section background */
+
+.our-students {
+    background-color: #192464;
+    color: white;
+    padding: 50px 0;
+    height: auto;
+}
+
+/* cards  */
+.our-students .cards {
+    display: flex;
+    gap: 50px;
+    margin: 30px;
+}
+
+/* style inside card */
+.our-students .card {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    height: 250px;
+    text-align: center;
+    padding: 15px;
+    transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+}
+
+/* student photo and name and rating */
+.our-students .card .photo {
+    align-items: center;
+    display: flex;
+    width: 100%;
+    padding: 15px;
+}
+
+/* student image */
+.our-students .card img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 0px 20px;
+}
+
+
+/* student name */
+.our-students .card h3 {
+    font-size: 18px;
+    color: #192464;
+    margin: 0 30px 0 0;
+}
+
+/* for text in card */
+.our-students .card .text p {
+    color: #192464;
+    text-align: start;
+}
+
+/* for rating star */
+.checked {
+    color: orange;
+}
+
+/********************************* footer *********************************/
+.footer {
+
+    display: flex;
+    flex-direction: column;
+    margin: 10px 50px;
+}
+
+.footer h2 {
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #192464;
+    text-align: center;
+}
+
+.footer h2 span {
+    color: #f27122;
+}
+
+.footer p {
+    margin: 20px 0;
+    text-align: center;
+    color: #192464;
+    font-size: 16px;
+}
+
+.footer h3 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #192464;
+    text-align: center;
+}
+
+.footer .social-media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin: 20px 0;
+    color: #192464;
+}
+
+.footer .social-media i {
+    height: 50px;
+    width: 50px;
+    color: #192464;
+}
