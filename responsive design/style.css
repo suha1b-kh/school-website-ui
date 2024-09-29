@@ -18,11 +18,11 @@ header nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 1rem;
+    padding: 0 1rem;
 }
 
 header nav h1 {
-    font-size: clamp(24px, 4vw, 34px);
+    font-size: clamp(20px, 3vw, 34px);
 
     text-transform: uppercase;
     color: white;
@@ -30,7 +30,7 @@ header nav h1 {
 }
 
 header nav h1 span {
-    font-size: clamp(24px, 4vw, 34px);
+    font-size: clamp(20px, 3vw, 34px);
     text-transform: uppercase;
     color: #f27122;
 }
@@ -63,10 +63,11 @@ header nav h1 span {
     flex-direction: column;
     align-items: center;
     gap: 5rem;
+    padding: 0 2rem;
 }
 
 .first-section .left h2 {
-    font-size: clamp(25px, 4vw, 40px);
+    font-size: clamp(25px, 4vw, 30px);
     white-space: nowrap;
     text-align: center;
 }
@@ -82,7 +83,7 @@ header nav h1 span {
 
 .first-section img {
     width: 50%;
-    max-width: 450px;
+    max-width: 400px;
     min-width: 300px;
     height: auto;
     background-color: #f27122;
@@ -93,7 +94,7 @@ header nav h1 span {
 /* Second section */
 .second-section {
     width: 100%;
-    height: 90vh;
+    height: 100vh;
     padding: 0 1rem;
     display: flex;
     flex-direction: column;
@@ -158,7 +159,7 @@ header nav h1 span {
 /* Third section */
 .third-section {
     width: 100%;
-    height: 90vh;
+    height: 100vh;
     padding: 0 3rem;
     display: flex;
     flex-direction: column;
@@ -319,8 +320,8 @@ header nav h1 span {
 @media screen and (max-width: 850px) {
     header {
         width: 100%;
-        height: 15vh;
-
+        height: auto;
+        padding: 10px 0;
     }
 
     header nav {
@@ -332,9 +333,8 @@ header nav h1 span {
     .first-section {
         flex-direction: column-reverse;
         justify-content: space-around;
-        height: 100vh;
+        height: 100vw;
         width: 100%;
-        padding: 9rem 0 0 0;
     }
 
 
