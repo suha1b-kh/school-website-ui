@@ -15,16 +15,17 @@ body {
 header {
     padding: 1rem 0;
     width: 50%;
-    margin: 0 auto;
     text-align: center;
+    width: 100%;
 }
 
 nav {
     display: inline-block;
     background-color: #171717;
     border-radius: 15px;
-    padding: 1rem 1rem;
+    padding: 2% 3%;
     margin: 0 auto;
+    width: auto;
 }
 
 
@@ -44,8 +45,8 @@ nav ul li a {
     text-decoration: none;
     color: white;
     font-weight: normal;
-    font-size: clamp(12px, 1.5vw, 20px);
-    padding: 0.5rem 1rem;
+    font-size: clamp(10px, 1.5vw, 20px);
+    padding: 0.5% 1%;
     border-radius: 15px;
 }
 
@@ -202,7 +203,7 @@ nav ul li a:focus {
 #projects .grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    padding: 5vw 5vw;
+    padding: 3vw 5vw;
 }
 
 #projects .grid> :last-child {
@@ -232,16 +233,17 @@ nav ul li a:focus {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: baseline;
     padding-bottom: clamp(20px, 2vw, 100px);
-    height: 80vh;
+    height: auto;
+
 
 }
 
 
 .project p {
     color: #fff;
-    font-size: 20px;
+    font-size: clamp(18px, 1.7vw, 20px);
     text-align: center;
 }
 
@@ -301,14 +303,13 @@ nav ul li a:focus {
 
 #contact form button {
     margin: 1vw 0;
-    padding: 1vw;
+    padding: 3%;
     border-radius: 15px;
     border: 6px solid;
     color: #fff;
     background-color: #171717;
-    font-size: clamp(18px, 2vw, 24px);
-
-
+    font-size: clamp(14px, 2vw, 24px);
+    cursor: pointer;
 }
 
 
@@ -328,7 +329,18 @@ footer .contact {
 footer .contact-items {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+}
 
+footer .contact-items div img {
+    width: clamp(35px, 1vw, 100px);
+    height: clamp(35px, 10vw, 100px);
+    margin: 0 auto;
+}
+
+footer .contact-items div p {
+    font-size: clamp(10px, 1.5vw, 20px);
+    margin: 0;
+    text-wrap: nowrap;
 }
 
 footer div ul {
@@ -344,8 +356,8 @@ footer div ul li a {
     text-decoration: none;
     color: #fff;
     font-weight: normal;
-    font-size: clamp(18px, 1.5vw, 20px);
-    padding: 0.5rem 1rem;
+    font-size: clamp(12px, 1.5vw, 20px);
+    padding: 0.5% 1%;
     border-radius: 15px;
 }
 
@@ -358,6 +370,27 @@ footer p {
 }
 
 /* responsive */
-@media screen and (max-width: 850px) {}
+@media screen and (max-width: 850px) {
+    #home {
+        flex-direction: column-reverse;
+        padding: 5vh 0;
+    }
 
-@media screen and (max-width: 500px) {}
+    #home .profile-text {
+        margin: 10vw 0;
+    }
+
+    #skills .skills-items {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #projects .grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .project {
+        height: auto;
+    }
+
+
+}
